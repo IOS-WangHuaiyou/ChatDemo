@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="left" rowHeight="125" id="KGk-i7-Jjw" customClass="ChatLeftCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="124.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatListCellHead.png" translatesAutoresizingMaskIntoConstraints="NO" id="tKC-hT-4C2">
+                        <rect key="frame" x="5" y="5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="axM-RW-l0A"/>
+                            <constraint firstAttribute="width" constant="35" id="gvs-jM-mat"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_receiver_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="c6E-Bx-fSe">
+                        <rect key="frame" x="45" y="5" width="67" height="41"/>
+                        <rect key="contentStretch" x="0.5" y="0.69999999999999996" width="0.0" height="0.0"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldy-AY-zDq">
+                        <rect key="frame" x="60" y="15" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tKC-hT-4C2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="3ev-Qn-nmB"/>
+                    <constraint firstItem="ldy-AY-zDq" firstAttribute="top" secondItem="c6E-Bx-fSe" secondAttribute="top" constant="10" id="9Y8-1m-4yN"/>
+                    <constraint firstItem="ldy-AY-zDq" firstAttribute="bottom" secondItem="c6E-Bx-fSe" secondAttribute="bottom" constant="-10" id="TSg-0f-dOD"/>
+                    <constraint firstItem="tKC-hT-4C2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Tau-X4-PzC"/>
+                    <constraint firstItem="ldy-AY-zDq" firstAttribute="leading" secondItem="c6E-Bx-fSe" secondAttribute="leading" constant="15" id="kic-br-Sdy"/>
+                    <constraint firstItem="ldy-AY-zDq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="pBd-eS-0sq"/>
+                    <constraint firstItem="ldy-AY-zDq" firstAttribute="trailing" secondItem="c6E-Bx-fSe" secondAttribute="trailing" constant="-10" id="v3C-mO-H06"/>
+                    <constraint firstItem="ldy-AY-zDq" firstAttribute="leading" secondItem="tKC-hT-4C2" secondAttribute="trailing" constant="20" id="xun-I0-SkQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="messageLabel" destination="ldy-AY-zDq" id="NC5-Wc-YWT"/>
+            </connections>
+            <point key="canvasLocation" x="270" y="307.5"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="right" id="77K-bK-9Wj" customClass="ChatLeftCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="77K-bK-9Wj" id="tgo-GU-AA3">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="124.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatListCellHead.png" translatesAutoresizingMaskIntoConstraints="NO" id="Igc-I5-uqt">
+                        <rect key="frame" x="280" y="5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="5QJ-nm-8W3"/>
+                            <constraint firstAttribute="height" constant="35" id="AQI-8p-f2R"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_sender_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="sjw-ED-dh3">
+                        <rect key="frame" x="208" y="5" width="67" height="41"/>
+                        <rect key="contentStretch" x="0.5" y="0.69999999999999996" width="0.0" height="0.0"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOB-EK-OvM">
+                        <rect key="frame" x="218" y="15" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Igc-I5-uqt" firstAttribute="leading" secondItem="FOB-EK-OvM" secondAttribute="trailing" constant="20" id="FEf-mV-UDp"/>
+                    <constraint firstItem="FOB-EK-OvM" firstAttribute="trailing" secondItem="sjw-ED-dh3" secondAttribute="trailing" constant="-15" id="HJB-NF-bj1"/>
+                    <constraint firstItem="FOB-EK-OvM" firstAttribute="top" secondItem="sjw-ED-dh3" secondAttribute="top" constant="10" id="SM5-0g-k3c"/>
+                    <constraint firstItem="Igc-I5-uqt" firstAttribute="top" secondItem="tgo-GU-AA3" secondAttribute="top" constant="5" id="feG-D9-dXH"/>
+                    <constraint firstItem="FOB-EK-OvM" firstAttribute="bottom" secondItem="sjw-ED-dh3" secondAttribute="bottom" constant="-10" id="hbM-Oc-urh"/>
+                    <constraint firstItem="FOB-EK-OvM" firstAttribute="leading" secondItem="sjw-ED-dh3" secondAttribute="leading" constant="10" id="k7e-Iq-Nma"/>
+                    <constraint firstAttribute="trailing" secondItem="Igc-I5-uqt" secondAttribute="trailing" constant="5" id="ve4-IX-GEn"/>
+                    <constraint firstItem="FOB-EK-OvM" firstAttribute="top" secondItem="tgo-GU-AA3" secondAttribute="top" constant="15" id="xsH-FY-Vn4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="messageLabel" destination="FOB-EK-OvM" id="7x6-Wp-ur0"/>
+            </connections>
+            <point key="canvasLocation" x="278" y="485.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chatListCellHead.png" width="51" height="51"/>
+        <image name="chat_receiver_bg.png" width="40" height="40"/>
+        <image name="chat_sender_bg.png" width="40" height="40"/>
+    </resources>
+</document>
