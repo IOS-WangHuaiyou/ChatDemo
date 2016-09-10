@@ -14,6 +14,8 @@
 
 @interface AppDelegate () <EMChatManagerDelegate>
 
+
+
 @end
 
 @implementation AppDelegate

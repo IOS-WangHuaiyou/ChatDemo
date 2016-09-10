@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "EaseMob.h"
 
+// 登录回调的block(成功&失败)
 typedef void(^LoginStatus)(id obj);
 
 @interface EaseMobManger : NSObject

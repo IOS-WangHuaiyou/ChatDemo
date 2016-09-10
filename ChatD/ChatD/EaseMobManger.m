@@ -10,6 +10,8 @@
 
 @interface EaseMobManger ()<EMChatManagerDelegate>
 
+
+
 @end
 
 @implementation EaseMobManger
