@@ -15,7 +15,7 @@ s.summary      = "A fast and convenient conversion between JSON and model"
 s.homepage     = "https://github.com/IOS-WangHuaiyou/ChatDemo"
 s.license      = "MIT"
 s.author       = { "wanghuaiyou" => "915325011@qq.com" }
-s.source       = { :git => "https://github.com/IOS-WangHuaiyou/ChatDemo.git", :tag => s.version }
-s.source_files  = "ChatDemo/ChatDemo/*.{h,m}"
+s.source       = { :git => "https://github.com/IOS-WangHuaiyou/ChatDemo.git", :commit => "c59523bf56c6890e64c49816c80bf3a3a0b94aa3" }
+s.source_files  = "ChatDemo/**/*.{h,m}"
 s.requires_arc = true
 end
